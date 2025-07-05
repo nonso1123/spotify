@@ -22,6 +22,9 @@ const Navbar = () => {
 					/>
 				</div>
 				<div className="flex items-center gap-4">
+					<button className="bg-white py-1 px-3 rounded-2xl text-[15px] cursor-pointer text-black">
+						<a href="https://spotify-admin-worh.onrender.com">Add Song</a>
+					</button>
 					<p className="bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer">
 						Explore Premium
 					</p>

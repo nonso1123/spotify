@@ -22,7 +22,9 @@ const Sidebar = () => {
 						<p className="font-bold">Your Library</p>
 					</div>
 					<div className="flex items-center gap-3">
-						<img className="w-5" src={assets.plus_icon} alt="" />
+						<button className="bg-white py-1 px-3 rounded-full text-[15px] cursor-pointer text-black">
+							<a href="https://spotify-admin-worh.onrender.com">Add Song</a>
+						</button>
 					</div>
 				</div>
 				<div className="p-4 bg-[#242424] m-2 rounded font-semibold flex flex-col items-start justify-start gap-1 pl-4">
