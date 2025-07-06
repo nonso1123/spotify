@@ -38,7 +38,7 @@ import img13 from "./img13.jpg";
 import img14 from "./img14.jpg";
 import img15 from "./img15.jpg";
 import img16 from "./img16.jpg";
-import song1 from "./song1.mp3";
+
 import song2 from "./song2.mp3";
 import song3 from "./song3.mp3";
 import With_You from "./Davido_Ft_Omah_Lay_-_With_You.mp3";
@@ -146,7 +146,7 @@ export const songsData = [
 		id: 3,
 		name: "On & On",
 		image: img4,
-		file: song1,
+		file: "",
 		desc: "Cartoon ft Daniel Levi",
 		duration: "2:50",
 	},
@@ -170,7 +170,7 @@ export const songsData = [
 		id: 6,
 		name: "Song Seven",
 		image: img7,
-		file: song1,
+		file: "",
 		desc: "Put a smile on your face with these happy tunes",
 		duration: "2:18",
 	},
