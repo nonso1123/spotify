@@ -22,7 +22,7 @@ const Navbar = () => {
 					/>
 				</div>
 				<div className="flex items-center gap-4">
-					<button className="bg-white py-1 px-3 rounded-2xl text-[15px] cursor-pointer text-black">
+					<button className="bg-white py-1 px-3 rounded-2xl text-[12px] cursor-pointer text-black">
 						<a href="https://spotify-admin-worh.onrender.com">Add Song</a>
 					</button>
 					<p className="bg-white text-black  sm:text-[15px] text-[12px] px-4 py-1 rounded-full hidden md:block cursor-pointer">
