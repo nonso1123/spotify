@@ -25,13 +25,12 @@ const Navbar = () => {
 					<button className="bg-white py-1 px-3 rounded-2xl text-[15px] cursor-pointer text-black">
 						<a href="https://spotify-admin-worh.onrender.com">Add Song</a>
 					</button>
-					<p className="bg-white text-black text-[15px] px-4 py-1 rounded-2xl hidden md:block cursor-pointer">
+					<p className="bg-white text-black  sm:text-[15px] text-[12px] px-4 py-1 rounded-full hidden md:block cursor-pointer">
 						Explore Premium
 					</p>
-					<p className="bg-black py-1 px-3 rounded-2xl text-[15px] cursor-pointer">
+					<p className="bg-black py-1 px-3 rounded-full sm:text-[15px] text-[12px] cursor-pointer">
 						Install App{" "}
 					</p>
-					<p className="bg-purple-500 text-black w-7 h-7 rounded-full flex items-center justify-center"></p>
 				</div>
 			</div>
 		</>
