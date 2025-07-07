@@ -50,13 +50,16 @@ const PlayerContextProvider = ({ children }) => {
 		});
 	};
 	const next = async () => {
-		songsData.map(async (item, index) => {
-			if (track._id === item._id && index < songsData.length) {
-				await setTrack(songsData[index + 1]);
-				await audioRef.current.play();
-				setPlayStatus(true);
+		for (let i = 0; i < songsData.length; i++) {
+			if (songsData[i]._id === track._id) {
+				if (i + 1 < songsData.length) {
+					await setTrack(songsData[i + 1]);
+					await audioRef.current.play();
+					setPlayStatus(true);
+				}
+				break;
 			}
-		});
+		}
 	};
 	const seekSong = async (e) => {
 		audioRef.current.currentTime =

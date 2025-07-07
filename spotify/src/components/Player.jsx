@@ -13,7 +13,13 @@ const Player = () => {
 		previous,
 		next,
 		seekSong,
+		songsData,
 	} = useContext(PlayerContext);
+
+	const currentIndex = songsData.findIndex((song) => song._id === track?._id);
+
+	const isFirstTrack = currentIndex === 0;
+	const isLastTrack = currentIndex === songsData.length - 1;
 	return track ? (
 		<div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
 			<div className="hidden lg:flex items-center gap-4">
@@ -32,11 +38,12 @@ const Player = () => {
 					/>
 
 					<img
-						onClick={previous}
-						className="w-4 cursor-pointer"
+						onClick={!isFirstTrack ? previous : null}
+						className={`w-4 ${isFirstTrack ? "opacity-40 " : "cursor-pointer"}`}
 						src={assets.prev_icon}
-						alt=""
+						alt="prev"
 					/>
+
 					{playStatus ? (
 						<img
 							onClick={pause}
@@ -54,10 +61,10 @@ const Player = () => {
 					)}
 
 					<img
-						onClick={next}
-						className="w-4 cursor-pointer"
+						onClick={!isLastTrack ? next : null}
+						className={`w-4 ${isLastTrack ? "opacity-40 " : "cursor-pointer"}`}
 						src={assets.next_icon}
-						alt=""
+						alt="next"
 					/>
 					<img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" />
 				</div>
